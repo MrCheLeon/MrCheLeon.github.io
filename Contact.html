@@ -40,15 +40,9 @@
 			var tel = telText.value;
 			var subject = subText.value;
 			//把user填的資料都塞到 mail body 中
-			/*
 			var body = ""+bodyText.value+'%0A%0A%0A';//%0A是換行 換了三行
 				body += "From："+nameText.value+'%0A';
 				body += "Email："+emailText.value+'%0A';
-				body += "Tel："+telText.value;
-			*/
-			var body = ""+bodyText.value+"<br>";//%0A是換行 換了三行
-				body += "From："+nameText.value+"<br>";
-				body += "Email："+emailText.value+"<br>";
 				body += "Tel："+telText.value;
 			//傳送的主要程式碼  
 				mailTo.href="mailto:"+to+"?subject="+subject+"&body="+body;
